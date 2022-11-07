@@ -1,0 +1,13 @@
+/*
+Theme Name:     Visual Composer Starter Child
+Theme URI:      https://visualcomposer.com/visual-composer-starter-theme/
+Description:    Visual-composer-starter child theme.
+Author:         Dmytro Kovalov
+Author URI:     https://www.linkedin.com/in/dmytro-kovalov-46976670/
+Template:       visual-composer-starter
+Version:        0.1.0
+*/
+
+body {
+    background-color: red;
+}
