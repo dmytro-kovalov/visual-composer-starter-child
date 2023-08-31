@@ -26,7 +26,8 @@ add_action( 'wp_enqueue_scripts', 'visual_composer_starter_parent_theme_enqueue_
  * Enqueue test scripts
  */
 function visual_composer_starter_child_enqueue_scripts() {
-    wp_localize_script('jquery', 'vcsc', array(
+	wp_enqueue_script( 'visual-composer-starter-child-script', get_stylesheet_directory_uri() . '/script.js', ['jquery'], '1.0.0', true );
+    wp_localize_script('visual-composer-starter-child-script', 'vcsc', array(
 		'ajaxurl' => admin_url('admin-ajax.php'), 
 		'nonce' => wp_create_nonce('vcsc_ajax_nonce')
 	));
